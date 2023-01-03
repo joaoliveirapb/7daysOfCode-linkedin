@@ -22,10 +22,16 @@ ul {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 img {
   display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fundo-escuro);
 }
 
 /* HEADER */
@@ -83,7 +89,6 @@ img {
 
 .menu-nav a {
   display: block;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   color: var(--texto-principal);
 }
@@ -95,4 +100,111 @@ img {
 .divisor {
   width: 2px;
   background-color: var(--texto-secundario);
+}
+
+/* PERFIL */
+
+.perfil {
+  margin-top: 24px;
+  margin-left: 154px;
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.informacoes-perfil {
+  max-width: 780px;
+  background-color: var(--fundo-card);
+  border-radius: 16px;
+  color: var(--texto-principal);
+}
+
+.imagens-perfil {
+  position: relative;
+}
+
+.imagem-perfil {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 120px;
+  left: 24px;
+}
+
+.dados-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  margin: 60px 0 24px 24px;
+}
+
+.nome-perfil {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.cargo-perfil {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.fala-sobre-perfil, .localidade-perfil, .bola-divisor {
+  font-size: 0.875em;
+  line-height: 25px;
+  color: var(--texto-secundario);
+}
+
+.contato, .seguidores-conexoes {
+  display: flex;
+  gap: 5px;
+}
+
+.contato-perfil {
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #70B5F9;
+  line-height: 25px;
+}
+
+.seguidores-perfil, .conexoes-perfil {
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #70B5F9;
+  line-height: 25px;
+}
+
+.botoes-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 5px;
+}
+
+.mensagem-perfil {
+  background-color: #70B5F9;
+  padding: 6px 29px;
+  border-radius: 16px;
+  font-size: 0.875em;
+  color: var(--texto-escuro);
+}
+
+.mais-perfil {
+  padding: 6px 49px;
+  font-size: 0.875em;
+  color: #70B5F9;
+  border: 1px solid #70B5F9;
+  border-radius: 16px;
+}
+
+.detalhes-carreira {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empresa-perfil, .instituicao-ensino-perfil {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
