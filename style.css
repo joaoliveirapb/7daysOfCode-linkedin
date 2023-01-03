@@ -1,0 +1,98 @@
+:root{
+  --fundo-escuro: #000;
+  --fundo-card: #1d2226;
+  --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+  --texto-principal: hsla(0, 0%, 100%, 0.9);
+  --texto-secundario: hsla(0, 0%, 100%, 0.6);
+  --texto-escuro: hsla(0, 0%, 0%, 0.75);
+  --input: #38434F;
+  --primario: #70b5f9;
+  --positivo: #3ec786;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--fundo-card);
+  padding: 9px 0 9px 153px;
+}
+
+.logo-linkedin {
+  margin-right: 8px;
+}
+
+.pesquisar {
+  display: flex;
+}
+
+.pesquisar img {
+  position: relative;
+  left: 35px;
+}
+
+.barra-pesquisar {
+  display: block;
+  width: 280px;
+  height: 35px;
+  padding: 0 40px;
+  margin-right: 100px;
+  background-color: var(--input);
+  color: var(--texto-principal);
+  border: none;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  color: var(--texto-principal);
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu-nav a {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75em;
+  color: var(--texto-principal);
+}
+
+.menu-nav a img {
+  margin: 0 auto;
+}
+
+.divisor {
+  width: 2px;
+  background-color: var(--texto-secundario);
+}
