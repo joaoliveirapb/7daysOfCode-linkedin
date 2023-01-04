@@ -112,7 +112,7 @@ body {
   margin-bottom: 30px;
 }
 
-.informacoes-perfil, .destaques {
+.informacoes-perfil, .destaques, .atividades, .sobre {
   max-width: 780px;
   background-color: var(--fundo-card);
   border-radius: 16px;
@@ -212,12 +212,11 @@ body {
 
 /* DESTAQUES DO PERFIL */
 
-.destaques {
+.destaques, .atividades, .sobre {
   padding: 16px 16px 22px 16px;
 }
 
-.destaques-titulo {
-  margin-left: 8px;
+.destaques-titulo, .atividades-titulo, .sobre-titulo {
   font-size: 1.25em;
   line-height: 30px;
 }
@@ -269,4 +268,70 @@ body {
 .comentarios-reacoes {
   font-size: 0.75em;
   color: var(--texto-secundario);
+}
+
+/* ATIVIDADES DO PERFIL */
+
+.atividades-seguidores {
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #70B5F9;
+}
+
+.atividades-publicacao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 13px 0;
+}
+
+.atividades-item {
+  border-bottom: 1px solid var(--texto-secundario);
+}
+
+.atividades-info {
+  font-size: 0.875em;
+  color: var(--texto-secundario);
+  line-height: 20px;
+}
+
+.atividades-detalhes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 10px 0;
+}
+
+.atividades-imagem {
+  width: 64px;
+  height: 64px;
+}
+
+.atividades-paragrafo {
+  font-size: 0.875em;
+  line-height: 20px;
+  max-width: 662px;
+}
+
+.atividades-item .reacoes {
+  margin: 0 0 10px 0;
+}
+
+.atividades-exibicao {
+  text-align: center;
+  font-size: 0.875em;
+  color: var(--texto-secundario);
+}
+
+/* SOBRE PERFIL */
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sobre-paragrafo {
+  font-size: 0.875em;
+  line-height: 20px;
 }
