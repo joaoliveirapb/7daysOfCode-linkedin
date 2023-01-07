@@ -102,14 +102,19 @@ body {
   background-color: var(--texto-secundario);
 }
 
+/* MAIN */
+
+main {
+  display: flex;
+  gap: 32px;
+}
+
 /* INFORMAÇÕES DO PERFIL */
 
 .perfil {
-  margin-top: 24px;
-  margin-left: 154px;
+  margin: 24px 0 60px 154px;
   display: grid;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .informacoes-perfil,
@@ -460,4 +465,57 @@ body {
 .idiomas-item span {
   font-size: 0.875em;
   color: var(--texto-secundario);
+}
+
+/* CONECTAR */
+
+.conectar {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pessoas-viram, .pessoas-conectar {
+  max-width: 320px;
+  padding: 16px;
+  background-color: var(--fundo-card);
+  color: var(--texto-principal);
+  border-radius: 16px;
+}
+
+.pessoas-viram-titulo, .pessoas-conectar-titulo {
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.pessoas {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.pessoas-dados {
+  display: flex;
+  gap: 8px;
+}
+
+.pessoas-detalhes h3 {
+  font-size: 0.875em;
+  line-height: 18px;
+}
+
+.pessoas-detalhes span {
+  font-size: 0.75em;
+  line-height: 16px;
+  color: var(--texto-secundario);
+}
+
+.enviar-mensagem, .conectar-botao {
+  display: inline-block;
+  margin: 8px 0 0 56px;
+  padding: 7px 16px;
+  color: var(--texto-principal);
+  border: 1px solid var(--texto-principal);
+  border-radius: 16px;
 }
