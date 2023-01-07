@@ -112,7 +112,13 @@ body {
   margin-bottom: 30px;
 }
 
-.informacoes-perfil, .destaques, .atividades, .sobre {
+.informacoes-perfil,
+.destaques,
+.atividades,
+.sobre,
+.experiencias,
+.formacao-academica,
+.idiomas {
   max-width: 780px;
   background-color: var(--fundo-card);
   border-radius: 16px;
@@ -212,11 +218,21 @@ body {
 
 /* DESTAQUES DO PERFIL */
 
-.destaques, .atividades, .sobre {
+.destaques,
+.atividades,
+.sobre,
+.experiencias,
+.formacao-academica,
+.idiomas {
   padding: 16px 16px 22px 16px;
 }
 
-.destaques-titulo, .atividades-titulo, .sobre-titulo {
+.destaques-titulo,
+.atividades-titulo,
+.sobre-titulo,
+.experiencias-titulo,
+.formacao-academica-titulo,
+.idiomas-titulo {
   font-size: 1.25em;
   line-height: 30px;
 }
@@ -334,4 +350,114 @@ body {
 .sobre-paragrafo {
   font-size: 0.875em;
   line-height: 20px;
+}
+
+/* EXPERIÊNCIAS */
+
+.logo-empresa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 5px 0;
+}
+
+.logo-empresa img {
+  width: 48px;
+  height: 48px;
+}
+
+.experiencias-empresa p {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.experiencias-empresa span {
+  font-size: 0.875em;
+  color: var(--texto-secundario);
+}
+
+.experiencias-info {
+  display: grid;
+  gap: 10px;
+}
+
+.experiencias-info li:nth-child(1) {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.experiencias-info li:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--texto-principal);
+  border-radius: 50%;
+  margin: 0 26px 0 21px;
+}
+
+.experiencias-info li:nth-child(2),
+.experiencias-info li:nth-child(3),
+.experiencias-info li:nth-child(4) {
+  color: var(--texto-secundario);
+  font-size: 0.875em;
+  line-height: 16px;
+  border-left: 1px solid var(--texto-secundario);
+  margin-left: 26px;
+  padding-left: 30px;
+}
+
+/* FORMAÇÃO ACADÊMICA */
+
+.formacao-academica-info {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logo-instituicao-ensino img {
+  width: 48px;
+  height: 48px;
+}
+
+.info-instituicao-ensino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nome-instituicao-ensino {
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.curso-instituicao-ensino {
+  font-size: 0.875em;
+  line-height: 16px;
+}
+
+.tempo-instituicao-ensino {
+  font-size: 0.875em;
+  line-height: 16px;
+  color: var(--texto-secundario);
+}
+
+/* IDIOMAS */
+
+.idiomas-item {
+  padding: 12px 0;
+}
+
+.idiomas-item + .idiomas-item {
+  border-top: 1px solid var(--texto-secundario);
+}
+
+.idiomas-item h3 {
+  font-size: 1em;
+  line-height: 30px;
+}
+
+.idiomas-item span {
+  font-size: 0.875em;
+  color: var(--texto-secundario);
 }
